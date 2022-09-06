@@ -15,7 +15,7 @@ body{
     padding-right: variables.$margins;
 }
 
-.header {
+header {
     @extend %margins;
 
     background-color: variables.$theme-navbg;
