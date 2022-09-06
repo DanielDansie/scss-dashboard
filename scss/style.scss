@@ -1,0 +1,17 @@
+@use "_colors.scss";
+
+
+
+.body{
+    background-color: colors.$theme-bg;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav{
+    background-color: colors.$theme-navbg;
+}
