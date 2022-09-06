@@ -6,12 +6,12 @@ body {
   padding: 0;
 }
 
-.nav, .header {
+.nav, header {
   padding-left: 5vw;
   padding-right: 5vw;
 }
 
-.header {
+header {
   background-color: #44475a;
   display: flex;
   flex-wrap: nowrap;

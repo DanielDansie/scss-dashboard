@@ -1,26 +1,24 @@
-@use "_colors.scss";
-
+@use "_colors";
+@use "_variables";
 
 
 body{
-    background-color: colors.$theme-bg;
+    background-color: variables.$theme-bg;
     overflow-x:hidden;
     overflow-y: scroll;
     margin: 0;
     padding: 0;
 }
 
-
-$margins: 5vw;
 %margins{
-    padding-left: $margins;
-    padding-right: $margins;
+    padding-left: variables.$margins;
+    padding-right: variables.$margins;
 }
 
-.header {
+header {
     @extend %margins;
 
-    background-color: colors.$theme-navbg;
+    background-color: variables.$theme-navbg;
 
     display: flex;
     flex-wrap: nowrap;
