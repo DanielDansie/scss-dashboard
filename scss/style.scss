@@ -78,6 +78,11 @@ $margins: 5vw;
 
         display:inline-flex;
         align-items: center;
+
         border: 2px solid colors.$drac-gray;
+        border-bottom: none;
+        border-radius: 10px 10px 0 0 ;
+
+
     }
 }
