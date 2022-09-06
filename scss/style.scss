@@ -57,6 +57,13 @@ $margins: 5vw;
 
 }
 
+@mixin checked($color){
+    border-color: $color;
+    color: $color;
+    background-color: colors.$theme-navbg;
+}
+
+
 .nav{
     @extend %margins;
 
@@ -71,7 +78,22 @@ $margins: 5vw;
 
     border-bottom: 3px solid colors.$drac-orange;
 
-    div{
+    input[type=radio]{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    input[type=radio]:checked + .users{
+        @include checked(colors.$nav-users);
+    }
+    input[type=radio]:checked + .weekly{
+        @include checked(colors.$nav-weekly);
+    }
+    input[type=radio]:checked + .subs{
+        @include checked(colors.$nav-subs);
+    }
+
+    label{
         width: 10vw;
         flex-grow: 1;
 
@@ -82,7 +104,6 @@ $margins: 5vw;
         border: 2px solid colors.$drac-gray;
         border-bottom: none;
         border-radius: 10px 10px 0 0 ;
-
 
     }
 }
