@@ -6,8 +6,30 @@ body {
   padding: 0;
 }
 
-nav {
+.header {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.header {
   background-color: #44475a;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #8be9fd;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.nav div {
+  display: flex;
+  align-items: center;
+  border: 2px solid #44475a;
 }
 
 /*# sourceMappingURL=style.css.map */

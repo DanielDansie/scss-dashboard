@@ -11,7 +11,36 @@ body{
 }
 
 
+$margins: 5vw;
+%margins{
+    padding-left: $margins;
+    padding-right: $margins;
+}
 
-nav{
+.header {
+    @extend %margins;
+
     background-color: colors.$theme-navbg;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid colors.$drac-cyan;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+
+    div{
+        display: flex;
+        align-items: center;
+        border: 2px solid colors.$drac-gray;
+    }
 }
