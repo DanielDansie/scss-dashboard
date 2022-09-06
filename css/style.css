@@ -6,8 +6,35 @@ body {
   padding: 0;
 }
 
-nav {
+.nav, .header {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.header {
   background-color: #44475a;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #8be9fd;
+}
+
+.nav {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 4vw;
+}
+.nav div {
+  width: 10vw;
+  flex-grow: 1;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #44475a;
 }
 
 /*# sourceMappingURL=style.css.map */
