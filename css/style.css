@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-.header {
+.nav, .header {
   padding-left: 5vw;
   padding-right: 5vw;
 }
@@ -21,13 +21,18 @@ body {
 }
 
 .nav {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: nowrap;
   flex-direction: row;
+  gap: 4vw;
 }
 .nav div {
-  display: flex;
+  width: 10vw;
+  flex-grow: 1;
+  display: inline-flex;
   align-items: center;
   border: 2px solid #44475a;
 }

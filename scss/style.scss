@@ -32,14 +32,24 @@ $margins: 5vw;
 }
 
 .nav{
+    @extend %margins;
+
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     flex-wrap: nowrap;
     flex-direction: row;
+    gap:4vw;
 
 
     div{
-        display: flex;
+        width: 10vw;
+        flex-grow: 1;
+
+
+        display:inline-flex;
         align-items: center;
         border: 2px solid colors.$drac-gray;
     }
