@@ -8,6 +8,8 @@ body{
     overflow-y: scroll;
     margin: 0;
     padding: 0;
+
+    font-size: 16px;
 }
 
 
@@ -16,18 +18,42 @@ $margins: 5vw;
     padding-left: $margins;
     padding-right: $margins;
 }
+@mixin outline($width, $color, $fill:transparent){
+    color: $fill;
+    -webkit-text-stroke-width: $width;
+    -webkit-text-stroke-color: $color;
+}
+
+
 
 .header {
     @extend %margins;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
 
     background-color: colors.$theme-navbg;
 
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-
+    gap:20px;
+    
     border-bottom: 2px solid colors.$drac-cyan;
+
+    img {
+        max-height: 100%;
+        flex-shrink: 1;
+        height: 4em;
+    }
+    h3{
+        margin:0;
+        font-size: 2.5em;
+        // text-shadow: 0px 0px 10px colors.$drac-orange, 0px 0px 10px colors.$drac-orange, 0px 0px 10px colors.$drac-orange;
+        @include outline(1px, colors.$drac-orange, colors.$drac-black);
+
+    }
 
 }
 
@@ -43,6 +69,7 @@ $margins: 5vw;
     flex-direction: row;
     gap:4vw;
 
+    border-bottom: 3px solid colors.$drac-orange;
 
     div{
         width: 10vw;
