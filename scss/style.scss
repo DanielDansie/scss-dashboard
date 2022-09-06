@@ -1,9 +1,9 @@
-@use "_colors.scss";
-
+@use "_colors";
+@use "_variables";
 
 
 body{
-    background-color: colors.$theme-bg;
+    background-color: variables.$theme-bg;
     overflow-x:hidden;
     overflow-y: scroll;
     margin: 0;
@@ -12,11 +12,9 @@ body{
     font-size: 16px;
 }
 
-
-$margins: 5vw;
 %margins{
-    padding-left: $margins;
-    padding-right: $margins;
+    padding-left: variables.$margins;
+    padding-right: variables.$margins;
 }
 @mixin outline($width, $color, $fill:transparent){
     color: $fill;
@@ -26,13 +24,13 @@ $margins: 5vw;
 
 
 
-.header {
+header {
     @extend %margins;
     padding-top: 2vw;
     padding-bottom: 2vw;
 
 
-    background-color: colors.$theme-navbg;
+    background-color: variables.$theme-navbg;
 
     display: flex;
     flex-wrap: nowrap;
