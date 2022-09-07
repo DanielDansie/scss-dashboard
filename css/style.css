@@ -89,17 +89,51 @@ header h3 {
   border-bottom: none;
   border-radius: 10px 10px 0 0;
   color: #f8f8f2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.4em;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4vw;
+  row-gap: 4vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  border: 2px solid #ffb86c;
+  border-radius: 10px;
+}
+
+.widget figure {
+  margin: 0;
+  border: 2px solid #ffb86c;
+  border-radius: 10px;
+  padding: 10px;
+}
+.widget figure figcaption {
+  text-align: center;
+  color: white;
+}
+.widget figure img, .widget figure iframe {
+  height: 20vw;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sales {
-<<<<<<< HEAD
-=======
   display: flex;
   gap: 2px;
 }
 .sales .ytd {
   flex-grow: 1;
->>>>>>> main
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -113,9 +147,6 @@ header h3 {
 .sales .target {
   flex-grow: 1;
   display: flex;
-<<<<<<< HEAD
-  max-height: 100%;
-=======
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -158,39 +189,6 @@ header h3 {
   width: 20vw;
   height: 10vw;
   background-color: #f8f8f2;
->>>>>>> main
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 4vw;
-  row-gap: 4vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  border: 2px solid #ffb86c;
-  border-radius: 10px;
-}
-.content .widget figure {
-  margin: 0;
-  border: 2px solid #ffb86c;
-  border-radius: 10px;
-  padding: 10px;
-}
-.content .widget figure figcaption {
-  text-align: center;
-  color: white;
-}
-.content .widget figure img, .content .widget figure iframe {
-  height: 20vw;
-  align-self: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

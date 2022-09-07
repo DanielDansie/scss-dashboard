@@ -1,7 +1,6 @@
 @use "_colors";
 @use "_variables";
 
-
 body {
     background-color: variables.$theme-bg;
     overflow-x:hidden;
@@ -16,47 +15,44 @@ body {
     padding-left: variables.$margins;
     padding-right: variables.$margins;
 }
+
 @mixin outline($width, $color, $fill:transparent) {
     color: $fill;
     -webkit-text-stroke-width: $width;
     -webkit-text-stroke-color: $color;
 }
+
 @mixin salesbox($width: 10vw, $height: 10vw, $backgroundcolor: colors.$drac-cyan) {
     width: $width;
     height: $height;
     background-color: $backgroundcolor
 }
 
-
 header {
     @extend %margins;
     padding-top: 2vw;
     padding-bottom: 2vw;
-
-
     background-color: variables.$theme-navbg;
-
+   
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap:20px;
     
+    gap:20px;   
     border-bottom: 2px solid colors.$drac-cyan;
-
+    
     img {
         max-height: 100%;
         flex-shrink: 1;
         height: 4em;
     }
+
     h3{
         margin:0;
         font-size: 2.5em;
-        // text-shadow: 0px 0px 10px colors.$drac-orange, 0px 0px 10px colors.$drac-orange, 0px 0px 10px colors.$drac-orange;
         @include outline(1px, colors.$drac-orange, colors.$drac-black);
-
     }
-
 }
 
 @mixin checked($color){
@@ -65,10 +61,8 @@ header {
     background-color: variables.$theme-navbg;
 }
 
-
 .nav{
     @extend %margins;
-
 
     margin-top: 2vw;
     margin-bottom: 2vw;
@@ -125,72 +119,10 @@ header {
         gap: 0.4em;
     }
 }
-// Drac-cyan
-.sales {
-    display: flex;
-    // flex-wrap: wrap;
-    gap: 2px;
-    .ytd {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        
-        @include salesbox();
-    }
-    .target {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        .perc {
-            top: 30px;
-            position: relative;
-            font-size: 30px;
-        }
-        .targettext {
-            top: 30px;
-            position: relative;
-            font-size: 20px;
-        }
-        .border {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            text-align: center;
-            width: 8vw;
-            height: 8vw;
-            border-radius: 100%;
-            background-color: colors.$drac-white;
-        }
-        .circle {
-            position: relative;
-            text-align: center;
-            width: 7vw;
-            height: 7vw;
-            border-radius: 100%;
-            background-color: colors.$drac-cyan;
-        }
-        @include salesbox();
-    }
-    .graph {
-        flex-grow: 1;
-        border-radius: 10px;
-        @include salesbox(20vw, 10vw, colors.$drac-white);
-    }
-}
-
-
 
 .content {
-    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap:4vw;
     row-gap: 4vw;
@@ -204,49 +136,93 @@ header {
     padding-top: 5vw;
     padding-bottom: 5vw;
 
-
     border: 2px solid colors.$drac-orange;
     border-radius: 10px;
-    
-    .widget{
-        // flex-grow: 1;
-        // max-width: 70vw;
-        // width:auto ;
-        // height: 20vw;
-        
-        
-        figure {
-            // flex-grow: 1;
-            // height:100%;
-            margin:0;
-            // width: fit-content;
-            // height: 100%;
-            // max-width: 70vw;
-            // width:fit-content;
-            // max-height: 40vw;
-    
-            border: 2px solid colors.$drac-orange;
-            border-radius: 10px;
-    
-            padding: 10px;
-        
-
-            figcaption {
-                text-align: center;
-                color: white;
-            }
-    
-            img, iframe {
-                // height: 100%;
-                height:20vw;
-                align-self: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    }
-
-
 }
 
+.widget{        
+    figure {
+        margin:0;
+        border: 2px solid colors.$drac-orange;
+        border-radius: 10px;
+        padding: 10px;
 
+        figcaption {
+            text-align: center;
+            color: white;
+        }
+
+        img, iframe {
+            height:20vw;
+            align-self: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.sales {
+    display: flex;
+    gap: 2px;
+
+    .ytd {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        
+        @include salesbox();
+    }
+
+    .target {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+        .perc {
+            top: 30px;
+            position: relative;
+            font-size: 30px;
+        }
+
+        .targettext {
+            top: 30px;
+            position: relative;
+            font-size: 20px;
+        }
+
+        .border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            width: 8vw;
+            height: 8vw;
+            border-radius: 100%;
+            background-color: colors.$drac-white;
+        }
+
+        .circle {
+            position: relative;
+            text-align: center;
+            width: 7vw;
+            height: 7vw;
+            border-radius: 100%;
+            background-color: colors.$drac-cyan;
+        }
+
+        @include salesbox();
+    }
+
+    .graph {
+        flex-grow: 1;
+        border-radius: 10px;
+        @include salesbox(20vw, 10vw, colors.$drac-white);
+    }
+}   
