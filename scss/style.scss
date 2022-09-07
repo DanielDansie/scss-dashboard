@@ -8,26 +8,59 @@ body{
     overflow-y: scroll;
     margin: 0;
     padding: 0;
+
+    font-size: 16px;
 }
 
 %margins{
     padding-left: variables.$margins;
     padding-right: variables.$margins;
 }
+@mixin outline($width, $color, $fill:transparent){
+    color: $fill;
+    -webkit-text-stroke-width: $width;
+    -webkit-text-stroke-color: $color;
+}
+
+
 
 header {
     @extend %margins;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
 
     background-color: variables.$theme-navbg;
 
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-
+    gap:20px;
+    
     border-bottom: 2px solid colors.$drac-cyan;
 
+    img {
+        max-height: 100%;
+        flex-shrink: 1;
+        height: 4em;
+    }
+    h3{
+        margin:0;
+        font-size: 2.5em;
+        // text-shadow: 0px 0px 10px colors.$drac-orange, 0px 0px 10px colors.$drac-orange, 0px 0px 10px colors.$drac-orange;
+        @include outline(1px, colors.$drac-orange, colors.$drac-black);
+
+    }
+
 }
+
+@mixin checked($color){
+    border-color: $color;
+    color: $color;
+    background-color: colors.$theme-navbg;
+}
+
 
 .nav{
     @extend %margins;
@@ -41,15 +74,35 @@ header {
     flex-direction: row;
     gap:4vw;
 
+    border-bottom: 3px solid colors.$drac-orange;
 
-    div{
+    input[type=radio]{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    input[type=radio]:checked + .users{
+        @include checked(colors.$nav-users);
+    }
+    input[type=radio]:checked + .weekly{
+        @include checked(colors.$nav-weekly);
+    }
+    input[type=radio]:checked + .subs{
+        @include checked(colors.$nav-subs);
+    }
+
+    label{
         width: 10vw;
         flex-grow: 1;
 
 
         display:inline-flex;
         align-items: center;
+
         border: 2px solid colors.$drac-gray;
+        border-bottom: none;
+        border-radius: 10px 10px 0 0 ;
+
     }
 }
 .info {
@@ -59,4 +112,23 @@ header {
 // Drac-cyan
 .sales {
     display: flex;
+}
+.content {
+    display: flex;
+}
+
+figure {
+    max-width: 100%;
+    max-height: fit-content;
+    border: 2px solid colors.$drac-orange;
+}
+
+figure img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+figcaption {
+    text-align: center;
+    color: white;
 }

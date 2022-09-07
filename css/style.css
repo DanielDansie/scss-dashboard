@@ -4,6 +4,7 @@ body {
   overflow-y: scroll;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 .nav, header {
@@ -12,12 +13,27 @@ body {
 }
 
 header {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   background-color: #44475a;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 20px;
   border-bottom: 2px solid #8be9fd;
+}
+header img {
+  max-height: 100%;
+  flex-shrink: 1;
+  height: 4em;
+}
+header h3 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #282a36;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffb86c;
 }
 
 .nav {
@@ -28,13 +44,35 @@ header {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 4vw;
+  border-bottom: 3px solid #ffb86c;
 }
-.nav div {
+.nav input[type=radio] {
+  visibility: hidden;
+  position: absolute;
+}
+.nav input[type=radio]:checked + .users {
+  border-color: #ffb86c;
+  color: #ffb86c;
+  background-color: #44475a;
+}
+.nav input[type=radio]:checked + .weekly {
+  border-color: #ff79c6;
+  color: #ff79c6;
+  background-color: #44475a;
+}
+.nav input[type=radio]:checked + .subs {
+  border-color: #ff5555;
+  color: #ff5555;
+  background-color: #44475a;
+}
+.nav label {
   width: 10vw;
   flex-grow: 1;
   display: inline-flex;
   align-items: center;
   border: 2px solid #44475a;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
 }
 
 .info {
@@ -44,6 +82,26 @@ header {
 
 .sales {
   display: flex;
+}
+
+.content {
+  display: flex;
+}
+
+figure {
+  max-width: 100%;
+  max-height: fit-content;
+  border: 2px solid #ffb86c;
+}
+
+figure img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

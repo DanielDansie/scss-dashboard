@@ -8,38 +8,44 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
     <body>
-        <header>
+        <header class="header">
             <img src="./images/logo.png" alt="company-logo">
             <h3>Dracula Inc.</h3>
         </header>
         <main>
             <nav class="nav">
-                <div class="users">
+                <input type="radio" name="tab" id="users">
+                <label class="users" for="users">
                     <i><span class="material-symbols-outlined">
                         account_circle
                         </span>
                     </i>
                     <p>1467</p>
                     <p>Registered users</p>
-                </div>
-                <div class="weekly-users">
+                </label>
+                <input type="radio" name="tab" id="weekly">
+                <label class="weekly" for="weekly">
                     <i><span class="material-symbols-outlined">
                         visibility
                         </span>
                     </i>
                     <p>957</p>
                     <p>Weekly Visitors</p>
-                </div>
-                <div class="subscriptions">
+                </label>
+                <input type="radio" name="tab" id="subs">
+                <label class="subs" for="subs">
                     <i><span class="material-symbols-outlined">
                         settings
                         </span>
                     </i>
                     <p>400</p>
                     <p>subscriptions</p>
-                </div>
+                </label>
             </nav>
             <div class="info">
+
+            <div class="content">
+
                 <div class="details">
                     <figure>
                         <figcaption>Customer Details</figcaption>
@@ -53,12 +59,14 @@
                     </figure>
                 </div>
                 <div class="sales">
+
                     <div class="customer">
                         <img src="#"><span>358</span>
                         <p>New Customer / YTD</p>
                     </div>
                     <div class="target"></div>
                     <div class="graph"></div>
+
                     <figure>
                         <figcaption>Sales in 2020</figcaption>
                         <img src="./images/sales-target-datapine.png">
