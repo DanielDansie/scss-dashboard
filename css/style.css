@@ -7,12 +7,12 @@ body {
   font-size: 16px;
 }
 
-.nav, .header {
+.nav, header {
   padding-left: 5vw;
   padding-right: 5vw;
 }
 
-.header {
+header {
   padding-top: 2vw;
   padding-bottom: 2vw;
   background-color: #44475a;
@@ -23,12 +23,12 @@ body {
   gap: 20px;
   border-bottom: 2px solid #8be9fd;
 }
-.header img {
+header img {
   max-height: 100%;
   flex-shrink: 1;
   height: 4em;
 }
-.header h3 {
+header h3 {
   margin: 0;
   font-size: 2.5em;
   color: #282a36;
@@ -73,6 +73,26 @@ body {
   border: 2px solid #44475a;
   border-bottom: none;
   border-radius: 10px 10px 0 0;
+}
+
+.content {
+  display: flex;
+}
+
+figure {
+  max-width: 100%;
+  max-height: fit-content;
+  border: 2px solid #ffb86c;
+}
+
+figure img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
