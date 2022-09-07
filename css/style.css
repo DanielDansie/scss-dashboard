@@ -65,6 +65,21 @@ header h3 {
   color: #ff5555;
   background-color: #44475a;
 }
+.nav .users:hover {
+  border-color: #ffb86c;
+  color: #ffb86c;
+  background-color: #44475a;
+}
+.nav .weekly:hover {
+  border-color: #ff79c6;
+  color: #ff79c6;
+  background-color: #44475a;
+}
+.nav .subs:hover {
+  border-color: #ff5555;
+  color: #ff5555;
+  background-color: #44475a;
+}
 .nav label {
   width: 10vw;
   flex-grow: 1;
@@ -76,17 +91,13 @@ header h3 {
   color: #f8f8f2;
 }
 
-.info {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .sales {
   display: flex;
 }
 
 .content {
   display: flex;
+  max-height: 100%;
 }
 
 figure {

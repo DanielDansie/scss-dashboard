@@ -16,13 +16,12 @@ body{
     padding-left: variables.$margins;
     padding-right: variables.$margins;
 }
+
 @mixin outline($width, $color, $fill:transparent){
     color: $fill;
     -webkit-text-stroke-width: $width;
     -webkit-text-stroke-color: $color;
 }
-
-
 
 header {
     @extend %margins;
@@ -115,16 +114,13 @@ header {
         color: colors.$drac-white;
     }
 }
-.info {
-    display: flex;
-    flex-wrap: wrap;
-}
-// Drac-cyan
 .sales {
     display: flex;
 }
+
 .content {
     display: flex;
+    max-height: 100%;
 }
 
 figure {
