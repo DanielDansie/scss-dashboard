@@ -91,6 +91,16 @@ header {
         @include checked(colors.$nav-subs);
     }
 
+    .users:hover{
+        @include checked(colors.$nav-users);
+    }
+    .weekly:hover{
+        @include checked(colors.$nav-weekly);
+    }
+    .subs:hover{
+        @include checked(colors.$nav-subs);
+    }
+
     label{
         width: 10vw;
         flex-grow: 1;
