@@ -79,7 +79,7 @@ header {
     flex-direction: row;
     gap:4vw;
 
-    border-bottom: 3px solid colors.$drac-orange;
+    border-bottom: 5px solid colors.$drac-orange;
 
     input[type=radio] {
         visibility: hidden;
@@ -195,7 +195,6 @@ header {
 
 
 .content {
-    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -215,22 +214,12 @@ header {
     border: 2px solid colors.$drac-orange;
     border-radius: 10px;
     
-    .widget {
-        // flex-grow: 1;
-        // max-width: 70vw;
-        // width:auto ;
-        // height: 20vw;
-        
-        
+    .widget{
+                
         figure {
-            // flex-grow: 1;
-            // height:100%;
+
             margin:0;
-            // width: fit-content;
-            // height: 100%;
-            // max-width: 70vw;
-            // width:fit-content;
-            // max-height: 40vw;
+
     
             border: 2px solid colors.$drac-orange;
             border-radius: 10px;
@@ -249,6 +238,7 @@ header {
                 align-self: center;
                 margin-left: auto;
                 margin-right: auto;
+                border-radius: 10px;
             }
         }
     }

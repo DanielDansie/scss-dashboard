@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="tabs.js"></script>
     </head>
     <body>
         <header class="header">
@@ -14,8 +15,8 @@
             <h3>Dracula Inc.</h3>
         </header>
         <main>
-            <nav class="nav">
-                <input type="radio" name="tab" id="users">
+            <nav class="nav" id="nav">
+                <input type="radio" name="tab" id="users" onclick="theme('#ffb86c');">
                 <label class="users" for="users">
                     <i><span class="material-symbols-outlined">
                         account_circle
@@ -24,7 +25,7 @@
                     <p>1467</p>
                     <p>Registered users</p>
                 </label>
-                <input type="radio" name="tab" id="weekly">
+                <input type="radio" name="tab" id="weekly" onclick="theme('#ff79c6');">
                 <label class="weekly" for="weekly">
                     <i><span class="material-symbols-outlined">
                         visibility
@@ -33,7 +34,7 @@
                     <p>957</p>
                     <p>Weekly Visitors</p>
                 </label>
-                <input type="radio" name="tab" id="subs">
+                <input type="radio" name="tab" id="subs" onclick="theme('#ff5555');">
                 <label class="subs" for="subs">
                     <i><span class="material-symbols-outlined">
                         settings
@@ -43,7 +44,7 @@
                     <p>Subscriptions</p>
                 </label>
             </nav>
-            <div class="content">
+            <div class="content" id="content">
                 <div class="details widget">
                     <figure>
                         <figcaption>Customer Details</figcaption>
@@ -75,7 +76,6 @@
                                     <span class="amount">1.180.357 &euro;</span>
                                     <p class="label">Sales Revenue / YTD</p>
                                 </div>
-                            </div>
                             <div class="target">
                                 <div class="border">
                                     <div class="circle">

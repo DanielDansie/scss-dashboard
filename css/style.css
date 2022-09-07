@@ -44,7 +44,7 @@ header h3 {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 4vw;
-  border-bottom: 3px solid #ffb86c;
+  border-bottom: 5px solid #ffb86c;
 }
 .nav input[type=radio] {
   visibility: hidden;
@@ -196,6 +196,7 @@ header h3 {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
