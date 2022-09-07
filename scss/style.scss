@@ -21,8 +21,7 @@ body {
     -webkit-text-stroke-width: $width;
     -webkit-text-stroke-color: $color;
 }
-
-@mixin salesbox($width: 10vw, $height: 10vw, $backgroundcolor: colors.$drac-cyan) {
+@mixin salesbox($width: 160px, $height: 160px, $backgroundcolor: colors.$drac-cyan) {
     width: $width;
     height: $height;
     background-color: $backgroundcolor
@@ -47,21 +46,21 @@ header {
         flex-shrink: 1;
         height: 4em;
     }
-
-    h3{
+    h3 {
         margin:0;
         font-size: 2.5em;
         @include outline(1px, colors.$drac-orange, colors.$drac-black);
     }
 }
 
-@mixin checked($color){
+@mixin checked($color) {
     border-color: $color;
     color: $color;
     background-color: variables.$theme-navbg;
 }
 
-.nav{
+
+.nav {
     @extend %margins;
 
     margin-top: 2vw;
@@ -73,34 +72,34 @@ header {
     flex-direction: row;
     gap:4vw;
 
-    border-bottom: 3px solid colors.$drac-orange;
+    border-bottom: 5px solid colors.$drac-orange;
 
-    input[type=radio]{
+    input[type=radio] {
         visibility: hidden;
         position: absolute;
     }
 
-    input[type=radio]:checked + .users{
+    input[type=radio]:checked + .users {
         @include checked(variables.$nav-users);
     }
-    input[type=radio]:checked + .weekly{
+    input[type=radio]:checked + .weekly {
         @include checked(variables.$nav-weekly);
     }
-    input[type=radio]:checked + .subs{
+    input[type=radio]:checked + .subs {
         @include checked(variables.$nav-subs);
     }
 
-    .users:hover{
+    .users:hover {
         @include checked(variables.$nav-users);
     }
-    .weekly:hover{
+    .weekly:hover {
         @include checked(variables.$nav-weekly);
     }
-    .subs:hover{
+    .subs:hover {
         @include checked(variables.$nav-subs);
     }
 
-    label{
+    label {
         width: 10vw;
         flex-grow: 1;
         
@@ -122,7 +121,7 @@ header {
 
 .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap:4vw;
     row-gap: 4vw;
@@ -136,33 +135,43 @@ header {
     padding-top: 5vw;
     padding-bottom: 5vw;
 
+
     border: 2px solid colors.$drac-orange;
     border-radius: 10px;
-}
+    
+    .widget{
+                
+        figure {
 
-.widget{        
-    figure {
-        margin:0;
-        border: 2px solid colors.$drac-orange;
-        border-radius: 10px;
-        padding: 10px;
+            margin:0;
 
-        figcaption {
-            text-align: center;
-            color: white;
-        }
+    
+            border: 2px solid colors.$drac-orange;
+            border-radius: 10px;
+    
+            padding: 10px;
+        
 
-        img, iframe {
-            height:20vw;
-            align-self: center;
-            margin-left: auto;
-            margin-right: auto;
+            figcaption {
+                text-align: center;
+                color: white;
+            }
+    
+            img, iframe {
+                // height: 100%;
+                height:20vw;
+                align-self: center;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+            }
         }
     }
 }
 
 .sales {
     display: flex;
+    flex-wrap: wrap;
     gap: 2px;
 
     .ytd {
@@ -173,7 +182,13 @@ header {
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        
+        .amount {
+            font-size: 25px;
+        }
+        .label {
+            margin: 0;
+            text-align: center;
+        }
         @include salesbox();
     }
 
@@ -202,8 +217,8 @@ header {
             align-items: center;
             position: relative;
             text-align: center;
-            width: 8vw;
-            height: 8vw;
+            width: 120px;
+            height: 120px;
             border-radius: 100%;
             background-color: colors.$drac-white;
         }
@@ -211,8 +226,8 @@ header {
         .circle {
             position: relative;
             text-align: center;
-            width: 7vw;
-            height: 7vw;
+            width: 105px;
+            height: 105px;
             border-radius: 100%;
             background-color: colors.$drac-cyan;
         }
@@ -223,6 +238,9 @@ header {
     .graph {
         flex-grow: 1;
         border-radius: 10px;
-        @include salesbox(20vw, 10vw, colors.$drac-white);
+        @include salesbox(51%, 160px, colors.$drac-white);
     }
-}   
+}
+
+
+

@@ -44,7 +44,7 @@ header h3 {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 4vw;
-  border-bottom: 3px solid #ffb86c;
+  border-bottom: 5px solid #ffb86c;
 }
 .nav input[type=radio] {
   visibility: hidden;
@@ -97,7 +97,7 @@ header h3 {
 
 .content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 4vw;
   row-gap: 4vw;
@@ -110,26 +110,27 @@ header h3 {
   border: 2px solid #ffb86c;
   border-radius: 10px;
 }
-
-.widget figure {
+.content .widget figure {
   margin: 0;
   border: 2px solid #ffb86c;
   border-radius: 10px;
   padding: 10px;
 }
-.widget figure figcaption {
+.content .widget figure figcaption {
   text-align: center;
   color: white;
 }
-.widget figure img, .widget figure iframe {
+.content .widget figure img, .content .widget figure iframe {
   height: 20vw;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
 }
 
 .sales {
   display: flex;
+  flex-wrap: wrap;
   gap: 2px;
 }
 .sales .ytd {
@@ -140,9 +141,16 @@ header h3 {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  width: 10vw;
-  height: 10vw;
+  width: 160px;
+  height: 160px;
   background-color: #8be9fd;
+}
+.sales .ytd .amount {
+  font-size: 25px;
+}
+.sales .ytd .label {
+  margin: 0;
+  text-align: center;
 }
 .sales .target {
   flex-grow: 1;
@@ -150,8 +158,8 @@ header h3 {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  width: 10vw;
-  height: 10vw;
+  width: 160px;
+  height: 160px;
   background-color: #8be9fd;
 }
 .sales .target .perc {
@@ -170,24 +178,24 @@ header h3 {
   align-items: center;
   position: relative;
   text-align: center;
-  width: 8vw;
-  height: 8vw;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   background-color: #f8f8f2;
 }
 .sales .target .circle {
   position: relative;
   text-align: center;
-  width: 7vw;
-  height: 7vw;
+  width: 105px;
+  height: 105px;
   border-radius: 100%;
   background-color: #8be9fd;
 }
 .sales .graph {
   flex-grow: 1;
   border-radius: 10px;
-  width: 20vw;
-  height: 10vw;
+  width: 51%;
+  height: 160px;
   background-color: #f8f8f2;
 }
 
