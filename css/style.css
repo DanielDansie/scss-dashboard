@@ -44,7 +44,7 @@ header h3 {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 4vw;
-  border-bottom: 3px solid #ffb86c;
+  border-bottom: 5px solid #ffb86c;
 }
 .nav input[type=radio] {
   visibility: hidden;
@@ -89,6 +89,10 @@ header h3 {
   border-bottom: none;
   border-radius: 10px 10px 0 0;
   color: #f8f8f2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.4em;
 }
 
 .sales {
