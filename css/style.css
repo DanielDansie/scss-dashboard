@@ -76,6 +76,15 @@ header h3 {
   color: #f8f8f2;
 }
 
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sales {
+  display: flex;
+}
+
 .content {
   display: flex;
 }

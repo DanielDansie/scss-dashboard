@@ -105,7 +105,14 @@ header {
         color: colors.$drac-white;
     }
 }
-
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+// Drac-cyan
+.sales {
+    display: flex;
+}
 .content {
     display: flex;
 }
