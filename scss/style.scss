@@ -94,8 +94,7 @@ header {
     label{
         width: 10vw;
         flex-grow: 1;
-
-
+        
         display:inline-flex;
         align-items: center;
 
@@ -103,6 +102,7 @@ header {
         border-bottom: none;
         border-radius: 10px 10px 0 0 ;
 
+        color: colors.$drac-white;
     }
 }
 
