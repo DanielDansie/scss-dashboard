@@ -105,3 +105,23 @@ header {
 
     }
 }
+
+.content {
+    display: flex;
+}
+
+figure {
+    max-width: 100%;
+    max-height: fit-content;
+    border: 2px solid colors.$drac-orange;
+}
+
+figure img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+figcaption {
+    text-align: center;
+    color: white;
+}
