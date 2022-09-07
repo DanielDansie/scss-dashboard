@@ -7,7 +7,7 @@ body {
   font-size: 16px;
 }
 
-.nav, header {
+.content, .nav, header {
   padding-left: 5vw;
   padding-right: 5vw;
 }
@@ -91,33 +91,40 @@ header h3 {
   color: #f8f8f2;
 }
 
-.info {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .sales {
   display: flex;
 }
 
 .content {
   display: flex;
-}
-
-figure {
-  max-width: 100%;
-  max-height: fit-content;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4vw;
+  row-gap: 4vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
   border: 2px solid #ffb86c;
+  border-radius: 10px;
 }
-
-figure img {
-  max-width: 100%;
-  max-height: auto;
+.content .widget figure {
+  margin: 0;
+  border: 2px solid #ffb86c;
+  border-radius: 10px;
+  padding: 10px;
 }
-
-figcaption {
+.content .widget figure figcaption {
   text-align: center;
   color: white;
+}
+.content .widget figure img, .content .widget figure iframe {
+  height: 20vw;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
