@@ -114,6 +114,11 @@ header {
         border-radius: 10px 10px 0 0 ;
 
         color: colors.$drac-white;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 0.4em;
     }
 }
 
