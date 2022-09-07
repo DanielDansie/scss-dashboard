@@ -110,8 +110,6 @@ header {
         width: 10vw;
         flex-grow: 1;
         
-        display:inline-flex;
-        align-items: center;
 
         border: 2px solid colors.$drac-gray;
         border-bottom: none;
@@ -120,9 +118,20 @@ header {
         color: colors.$drac-white;
 
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        flex-wrap: nowrap;
+        align-items:center;
+        align-content: flex-start;
+        text-align: center;
+        flex-wrap: wrap;
         gap: 0.4em;
+        i{
+            font-size: 1em;
+        }
+        p{
+            margin: 0;
+            font-size: 1em;
+        }
     }
 }
 // Drac-cyan
@@ -234,7 +243,7 @@ header {
     
             img, iframe {
                 // height: 100%;
-                height:20vw;
+                height:20vmax;
                 align-self: center;
                 margin-left: auto;
                 margin-right: auto;

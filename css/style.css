@@ -83,16 +83,25 @@ header h3 {
 .nav label {
   width: 10vw;
   flex-grow: 1;
-  display: inline-flex;
-  align-items: center;
   border: 2px solid #44475a;
   border-bottom: none;
   border-radius: 10px 10px 0 0;
   color: #f8f8f2;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-wrap: nowrap;
+  align-items: center;
+  align-content: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
   gap: 0.4em;
+}
+.nav label i {
+  font-size: 1em;
+}
+.nav label p {
+  margin: 0;
+  font-size: 1em;
 }
 
 .sales {
@@ -192,7 +201,7 @@ header h3 {
   color: white;
 }
 .content .widget figure img, .content .widget figure iframe {
-  height: 20vw;
+  height: 20vmax;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
