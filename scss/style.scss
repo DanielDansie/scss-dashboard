@@ -188,7 +188,6 @@ header {
 
 
 .content {
-    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -209,21 +208,13 @@ header {
     border-radius: 10px;
     
     .widget{
-        // flex-grow: 1;
-        // max-width: 70vw;
-        // width:auto ;
-        // height: 20vw;
+
         
         
         figure {
-            // flex-grow: 1;
-            // height:100%;
+
             margin:0;
-            // width: fit-content;
-            // height: 100%;
-            // max-width: 70vw;
-            // width:fit-content;
-            // max-height: 40vw;
+
     
             border: 2px solid colors.$drac-orange;
             border-radius: 10px;
