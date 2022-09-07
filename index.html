@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
     <body>
         <header class="header">
@@ -39,34 +40,55 @@
                         </span>
                     </i>
                     <p>400</p>
-                    <p>subscriptions</p>
+                    <p>Subscriptions</p>
                 </label>
             </nav>
             <div class="content">
-                <div class="details">
+                <div class="details widget">
                     <figure>
                         <figcaption>Customer Details</figcaption>
                         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSZ_9UxXBIFqy4u7yz4p0EeDfrK2l4whgqpxfgMDyKUT2BKkEFYkwFUiztM7TahoSVCx5_lji_RGGCk/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                     </figure>
                 </div>
-                <div class="locations">
+                <div class="locations widget">
                     <figure>
                         <figcaption>Regional Map</figcaption>
                         <img src="./images/us-map.jpg" alt="map-of-USA">
                     </figure>
                 </div>
-                <div class="sales">
-                    <div class="customer">
-                        <img src="#"><span>358</span>
-                        <p>New Customer / YTD</p>
+                <figure>
+                    <figcaption>Sales in 2020</figcaption>
+                    <div class="sales">
+                        <div class="ytd">
+                            <div class="newcustomer">
+                                <span class="material-symbols-outlined">
+                                    person
+                                    </span><span>358</span>
+                                <span>New Customer / YTD</span>
+                            </div>
+                            <div class="revenue">
+                                <span class="material-symbols-outlined">
+                                    monitoring
+                                    </span><span>1.180.357 &euro;</span>
+                                <span>Sales Revenue / YTD</span>
+                            </div>
+                        </div>
+                        <div class="target">
+                            <div class="border">
+                                <div class="circle">
+                                    <span class="perc">127%</span>
+                                    <span class="targettext">Congrats!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graph"></div>
                     </div>
-                    <div class="target"></div>
-                    <div class="graph"></div>
-                    <figure>
-                        <figcaption>Sales in 2020</figcaption>
-                        <img src="./images/sales-target-datapine.png">
-                    </figure>
-                </div>
+                </figure>
+
+                <!-- <figure>
+                    <figcaption>Sales in 2020</figcaption>
+                    <img src="./images/sales-target-datapine.png">
+                </figure> -->
             </div>
         </main>
     </body>
