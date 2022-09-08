@@ -201,11 +201,6 @@ header {
         }
         @include salesbox();
     }
-    .graph {
-        flex-grow: 1;
-        border-radius: 10px;
-        @include salesbox(51%, 160px, colors.$drac-white);
-    }
 }
 
 
@@ -266,8 +261,6 @@ header {
             }
         }
     }
-
-
 }
 
 
