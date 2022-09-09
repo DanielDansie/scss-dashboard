@@ -1,3 +1,7 @@
+@font-face {
+  font-family: neon;
+  src: url(../font/FutureLight-BW15w.ttf);
+}
 body {
   background-color: #282a36;
   overflow-x: hidden;
@@ -30,14 +34,14 @@ header img {
 }
 header h3 {
   margin: 0;
-  font-size: 2.5em;
-  color: #282a36;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffb86c;
+  font-family: neon;
+  font-size: 3em;
+  text-shadow: 0px 0px 20px #ffb86c, 0px 0px 5px #ffb86c;
+  color: #ffb86c;
 }
 
 .nav {
-  margin-top: 2vw;
+  margin-top: 4vmax;
   margin-bottom: 2vw;
   display: flex;
   justify-content: space-between;
@@ -83,16 +87,27 @@ header h3 {
 .nav label {
   width: 10vw;
   flex-grow: 1;
-  display: inline-flex;
-  align-items: center;
   border: 2px solid #44475a;
   border-bottom: none;
   border-radius: 10px 10px 0 0;
+  padding-top: 10px;
+  padding-bottom: 4px;
   color: #f8f8f2;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-wrap: nowrap;
+  align-items: center;
+  align-content: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
   gap: 0.4em;
+}
+.nav label i {
+  font-size: 1em;
+}
+.nav label p {
+  margin: 0;
+  font-size: 1em;
 }
 
 .content {
@@ -121,11 +136,16 @@ header h3 {
   color: white;
 }
 .content .widget figure img, .content .widget figure iframe {
-  height: 20vw;
+  max-width: 60vw;
+  height: max(15vh, 20vw);
   align-self: center;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+}
+.content .widget figure iframe {
+  height: max(30vh, 20vw);
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

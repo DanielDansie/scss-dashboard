@@ -1,3 +1,12 @@
+@use "_colors";
+@use "_variables";
+
+@mixin salesbox($width: 160px, $height: 160px, $backgroundcolor: colors.$drac-cyan) {
+    width: $width;
+    height: $height;
+    background-color: $backgroundcolor
+}
+
 .sales {
     display: flex;
     flex-wrap: wrap;
