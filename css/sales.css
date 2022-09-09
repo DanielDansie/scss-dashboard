@@ -33,12 +33,10 @@
   background-color: #8be9fd;
 }
 .sales .target .perc {
-  top: 30px;
   position: relative;
   font-size: 30px;
 }
 .sales .target .targettext {
-  top: 30px;
   position: relative;
   font-size: 20px;
 }
@@ -60,6 +58,10 @@
   height: 105px;
   border-radius: 100%;
   background-color: #8be9fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=sales.css.map */
